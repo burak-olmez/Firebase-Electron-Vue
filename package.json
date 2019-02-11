@@ -1,0 +1,29 @@
+{
+  "name": "firebase-electron-vue",
+  "version": "1.0.0",
+  "description": "Simple authentication system with Firebase using Electron and Vue",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "firebase": "^5.8.2",
+    "sweetalert": "^2.1.2",
+    "vue": "^2.5.22",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.4.0",
+    "@vue/cli-service": "^3.4.0",
+    "electron": "^4.0.0",
+    "vue-cli-plugin-electron-builder": "^1.0.0-rc.11",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "main": "background.js",
+  "license": "MIT"
+}
